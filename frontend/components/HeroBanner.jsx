@@ -15,6 +15,7 @@ const HeroBanner = () => {
                 showThumbs={false}
                 showIndicators={false}
                 showStatus={false}
+                stopOnHover={false}
                 renderArrowPrev={(clickHandler, hasPrev) => (
                     <div
                         onClick={clickHandler}

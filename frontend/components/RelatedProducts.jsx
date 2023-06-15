@@ -29,6 +29,9 @@ const RelatedProducts = ({products}) => {
             containerClass='-mx-[10px]' 
             itemClass='px-[10px]' 
             responsive={responsive}
+            renderArrowsWhenDisabled={true}
+            rewindWithAnimation={true}
+            infinite={true}
         >
             {products?.data?.map((product) => (
                     <ProductCard key={product?.id} data={product}/>

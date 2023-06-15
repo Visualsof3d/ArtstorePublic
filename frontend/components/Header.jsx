@@ -6,9 +6,10 @@ import Menu from "./Menu";
 import MenuMobile from "./MenuMobile";
 
 import { IoMdHeartEmpty } from "react-icons/io";
-import { BsCart } from "react-icons/bs";
+import { BsCart, BsGithub } from "react-icons/bs";
 import { BiMenuAltRight } from "react-icons/bi";
 import { VscChromeClose } from "react-icons/vsc";
+import { FiGithub } from "react-icons/fi";
 import { fetchDataFromApi } from "@/utils/api";
 import { useSelector } from "react-redux";
 import Cart from "@/pages/cart";
@@ -81,17 +82,15 @@ const Header = () => {
                 <div className="flex items-center gap-2 text-white">
                     
                     {/* Icon Start */}
-                    {/* <Link href="/cart"> */}
-                    {/* <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-white/[0.15] cursor-pointer relative"> */}
-                        {/* <IoMdHeartEmpty className="text-[19px] md:text-[24px]"/> */}
-                        {/* <div className="h-[14px] md:h-[18px] min-w-[14px] md:min-w-[18px] rounded-full bg-red-600 absolute top-1 left-5 md:left-7 text-white text-[10px] md:text-[12px] flex justify-center items-center px-[2px] md:px-[5px]">
-                            
-                        </div> */}
-                    {/* </div> */}
-                    {/* </Link> */}
+                    <Link href="https://github.com/Visualsof3d/ArtstorePublic">
+                    <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-white/[0.15] cursor-pointer relative mt-[1px]">
+                        <FiGithub className="text-[15px] md:text-[20px]"/>
+                        <div className="h-[14px] md:h-[18px] min-w-[14px] md:min-w-[18px] rounded-full bg-red-600 absolute top-1 left-5 md:left-7 text-white text-[10px] md:text-[12px] flex justify-center items-center px-[2px] md:px-[5px]">
+                            1
+                        </div>
+                    </div>
+                    </Link>
                     {/* Icon end */}
-
-                    
 
                     
                     {/* Icon Start */}

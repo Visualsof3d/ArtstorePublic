@@ -11,8 +11,8 @@ import Link from "next/link";
 export default function Home({products}) {
 
     return (<main className="bg-black text-white">
-        <Wrapper>
         <HeroBanner/>
+        <Wrapper>
             {/* Heading and paragraph section start*/}
             <div className="text-center max-w-[800px] mx-auto my-[50px] md:my-[50px]">
                 <div className="text-[28px] md:text-[34px] mb-5 font-semibold leading-tight">
@@ -31,8 +31,6 @@ export default function Home({products}) {
                 ))}
             </div>
             {/* Product grid end */}
-            <img src="/about2.jpg" className="aspect-[16/10] md:aspect-auto object-cover"/>
-            
         </Wrapper>
     </main>);
 }

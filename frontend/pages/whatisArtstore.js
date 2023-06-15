@@ -1,6 +1,7 @@
 import Wrapper from "@/components/Wrapper";
 import Link from "next/link";
 import React from "react";
+import { BsGithub } from "react-icons/bs";
 
 const whatisArtstore = () => {
   return (
@@ -34,9 +35,14 @@ const whatisArtstore = () => {
                     ease and peace of mind.
                   </div>
                 </div>
-                <Link href={}>
-                  <div className=" px-4 py-2 items-center justify-center gap-2 bg-zinc-700 rounded-full mt-8 border-black border hover:bg-black hover:border-white font-bold">
-                    <p className="text-sm md:text-lg font-semibold text-white/[0.85 hover:text-white/[0.85]">
+                <Link
+                  href={
+                    "https://github.com/Visualsof3d/ArtstorePublic/tree/main/frontend"
+                  }
+                >
+                  <div className=" px-4 py-2 items-center justify-center gap-2 bg-zinc-700 flex rounded-full mt-8 border-black border hover:bg-black hover:border-white font-bold">
+                    <BsGithub className="flex w-6 h-6 mr-20px" />
+                    <p className="text-sm md:text-lg font-semibold text-white/[0.85 hover:text-white/[0.85] flex">
                       Code by Rajan Kumar (Visualsof3D)
                     </p>
                   </div>
@@ -84,10 +90,7 @@ const whatisArtstore = () => {
             </div>
           </Wrapper>
         </div>
-        <img
-          src="/about2.jpg"
-          className="aspect-[16/10] md:aspect-auto object-cover"
-        />
+        <img src="/about2.jpg" className="aspect-[16/10] md:aspect-auto object-cover mt-8"/>
         <div className="opacity-90">
           <div className="text-white text-center uppercase font-semibold py-5 text-[30px] md:text-[40px] mt-[30px] md:mt-[50px]">
             Mission
